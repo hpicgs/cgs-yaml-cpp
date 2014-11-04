@@ -1,3 +1,7 @@
+# WARNING
+
+Not yet ready for production, I'm still testing this library!
+
 # Sources
 
 * https://code.google.com/p/yaml-cpp/source/checkout
