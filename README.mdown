@@ -1,0 +1,15 @@
+# Sources
+
+* https://code.google.com/p/yaml-cpp/source/checkout
+* http://stackoverflow.com/questions/16037787/convert-mercurial-project-to-git
+* git://repo.or.cz/fast-export.git
+
+# Command line to get yaml repo and convert it to git
+
+- hg clone https://code.google.com/p/yaml-cpp/
+- git clone git://repo.or.cz/fast-export.git
+- git init yaml-cpp.git
+- cd yaml-cpp.git
+- #maybe you have to patch fast-export/hg-fast-export.sh to really use python2
+- ../fast-export/hg-fast-export.sh -r yaml-cpp yaml-cpp.git
+- git checkout HEAD
